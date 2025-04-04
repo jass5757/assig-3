@@ -1,0 +1,139 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #0b3d91; /* NASA blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+#student-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Main content styles */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.date-selector {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#date-picker {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#fetch-button {
+    padding: 8px 16px;
+    background-color: #fc3d21; /* NASA red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#fetch-button:hover {
+    background-color: #e02b0f;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+.apod-container {
+    display: none;
+}
+
+#title {
+    margin-bottom: 15px;
+    color: #0b3d91;
+}
+
+.media-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.media-container img, .media-container iframe {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#explanation {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #0b3d91;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .date-selector {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .date-selector label {
+        margin-bottom: 5px;
+    }
+}
